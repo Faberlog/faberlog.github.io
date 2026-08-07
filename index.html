@@ -1,20 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Xiaodong Chen</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            background-color: #f6f7f9;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 16px 30px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav .nav-container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #005bbb;
+        }
+
+        header {
+            background-color: white;
+            padding: 90px 30px;
+        }
+
+        .hero {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 10px 0;
+        }
+
+        .hero h2 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #555;
+            margin: 0 0 15px 0;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #555;
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 30px;
+        }
+
+        section {
+            background-color: white;
+            padding: 35px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .item {
+            margin-bottom: 25px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item h3 {
+            margin-bottom: 5px;
+        }
+
+        .item p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #eef3f8;
+            padding: 7px 12px;
+            margin: 5px 5px 5px 0;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px;
+            color: #777;
+        }
+
+        @media (max-width: 700px) {
+
+            nav .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            header {
+                padding: 60px 25px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>Xiaodong Chen</h1>
+    <nav>
+        <div class="nav-container">
 
-    <p>Hello! This is my personal website.</p>
+            <div class="name">
+                Xiaodong Chen
+            </div>
 
-    <p>
-        Ph.D. Student at the University at Buffalo
-    </p>
+            <div>
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#education">Education</a>
+                <a href="#publications">Publications</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <header>
+
+        <div class="hero">
+
+            <h1>Xiaodong Chen</h1>
+
+            <h2>
+                Ph.D. Student in Mechanical and Aerospace Engineering
+            </h2>
+
+            <p>
+                University at Buffalo, The State University of New York
+            </p>
+
+            <p>
+                My research interests include advanced manufacturing,
+                robotics, computer vision, control systems, and
+                data-driven manufacturing.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am a Ph.D. student at the University at Buffalo.
+                My research focuses on advanced manufacturing,
+                automation, robotics, computer vision, and
+                data-driven engineering.
+            </p>
+
+        </section>
+
+
+        <section id="research">
+
+            <h2>Research Interests</h2>
+
+            <span class="tag">Advanced Manufacturing</span>
+            <span class="tag">Additive Manufacturing</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Control Systems</span>
+            <span class="tag">Machine Learning</span>
+
+        </section>
+
+
+        <section id="education">
+
+            <h2>Education</h2>
+
+            <div class="item">
+
+                <h3>University at Buffalo</h3>
+
+                <p>
+                    Ph.D. Student, Industrial and Systems Engineering
+                </p>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>University of Pittsburgh</h3>
+
+                <p>
+                    M.S. in Mechanical Engineering
+                </p>
+
+            </div>
+
+
+            <div class="item">
+
+                <h3>Sun Yat-sen University</h3>
+
+                <p>
+                    B.Eng. in Aeronautical and Astronautical Engineering
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="publications">
+
+            <h2>Publications</h2>
+
+            <div class="item">
+
+                <h3>
+                    Publications will be added here.
+                </h3>
+
+                <p>
+                    Journal papers, conference papers, and other
+                    research outputs can be listed in this section.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                Email: your-email@buffalo.edu
+            </p>
+
+            <p>
+                Google Scholar
+            </p>
+
+            <p>
+                GitHub
+            </p>
+
+            <p>
+                LinkedIn
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Xiaodong Chen
+
+    </footer>
 
 </body>
+
 </html>
